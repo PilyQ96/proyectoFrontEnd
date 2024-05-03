@@ -1,0 +1,33 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* selector de colores y texto */
+:root {
+    --main-color: #fffcdd;
+    --secondary-color: #805841;
+    /*--text-color: ;
+    --big-font: ;
+    --h2-font: ;
+    --p-font: ;*/
+}
+
+.contenedor {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja {
+    width: 30%;         
+    height: auto;        
+    background-color: #f5a2a2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+  }
