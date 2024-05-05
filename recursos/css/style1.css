@@ -11,14 +11,77 @@
     --p-font: ;*/
 }
 
-.contenedor {
+body {
     background-color: var(--main-color);
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Header y navbar*/
+.nivel {
+    display: none;
+}
+
+/*logo */
+
+#logotipo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 1px solid #ffd8d8;
+}
+
+/*cabecera y barra de navegación*/
+
+header{
+    background-color: var(--secondary-color);
+    position: fixed;
+    width: 100%;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.navbar-nav li a{
+    font-family: Exo2;
+    font-size: 20px;
+    color: #dcf7f3;
+    text-decoration: none;
+}
+
+/*seccion inicio*/
+
+.banner img{
+    width: 100%;
+    height: auto;
+
+}
+
+/* seccion destacados */
+.contenedorD {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffd8d8;
 }
 
-.caja {
+.cajaD {
     width: 30%;         
     height: auto;        
     background-color: #f5a2a2; 
@@ -27,7 +90,63 @@
     align-items: center;
 }
 
-.imagen img {
+.imagenD img {
     width: 100%;
     height: auto;
   }
+
+#tarjeta1 {
+    margin-left: 20px;
+}
+
+#tarjeta3 {
+    margin-right: 20px;
+}
+
+/*footer */
+
+footer{
+    background-color: var(--secondary-color);
+}
+
+.contenedorF {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#cajaLectura div {
+    background-color: #ffd8d8;
+}
+
+#lista{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#lista ul{
+    list-style-type: none;
+}
+
+#lista li {
+    margin-bottom: 10px;
+    font-family: Exo2, sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #dcf7f3;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+i {
+    color: #dcf7f3;
+}
