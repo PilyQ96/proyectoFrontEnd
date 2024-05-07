@@ -1,0 +1,163 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* selector de colores*/
+:root {
+    --main-color: #fffcdd;
+    --secondary-color: #805841;
+    --third-color: #dcf7f3;
+    --forth-color: #ffd8d8;
+    --fifth-color: #f5a2a2;
+}
+
+body {
+    background-color: var(--main-color);
+    padding-top: 70px;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Header y navbar*/
+.nivel {
+    display: none;
+}
+
+/*logo */
+
+#logotipo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 1px solid -var(-forth-color);
+}
+
+header{
+    background-color: var(--secondary-color);
+    position: fixed;
+    width: 100%;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.navbar-nav li a{
+    font-family: Exo2, sans-serif;
+    font-size: 20px;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: var(--fifth-color);
+    border-radius: 50%;
+}
+
+.abrirMenu {
+    display: none;
+}
+
+.cerrarMenu {
+    display: none;
+}
+
+.modoOscuroOn {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--third-color);
+    margin-right: 10px;
+    margin-left: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modoOscuroOn:hover {
+    background-color: var(--fifth-color);
+}
+
+.modoOscuroOff {
+    display: none;
+}
+
+/*seccion Ejem*/
+.contenedorEJEM {
+    margin-top: 80px;
+}
+
+/*footer */
+
+footer{
+    background-color: var(--secondary-color);
+}
+
+.contenedorF {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#lista{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#lista ul{
+    list-style-type: none;
+}
+
+#lista li {
+    margin-bottom: 10px;
+    font-family: Exo2, sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    color: var(--third-color);
+}
+
+#lista a {
+    font-family: Exo2, sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+i {
+    color: var(--third-color);
+}
