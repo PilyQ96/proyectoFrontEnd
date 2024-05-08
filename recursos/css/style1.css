@@ -12,6 +12,7 @@
 
 body {
     background-color: var(--main-color);
+    padding-top: 80px;
 }
 
 section[id] {
@@ -40,8 +41,10 @@ html{
 header{
     background-color: var(--secondary-color);
     position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-
+    z-index: 100;
 }
 
 .navbar {
@@ -106,10 +109,37 @@ header{
 
 /*seccion inicio*/
 
-.banner img{
+.banner {
+    background-image: url(../imagenes/Captura\ de\ pantalla\ \(1887\).png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 550px;
+    z-index: 1;
+}
+
+.banner-items {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    padding: 20px;
+    color: var(--secondary-color);
+    margin-top: 70px;
+}
+
+.banner-items h1{
+    font-family: Dancing Script, cursive;
+    font-weight: bold;
+    font-size: 75px;
     width: 100%;
-    height: auto;
-    margin-top: 80px;
+}
+
+.banner-items p {
+    font-family: Exo2, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    width: 60%;
 }
 
 /* seccion destacados */
