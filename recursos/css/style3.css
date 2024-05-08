@@ -12,6 +12,7 @@
 
 body {
     background-color: var(--main-color);
+    padding-top: 70px;
 }
 
 section[id] {
@@ -34,7 +35,7 @@ html{
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    border: 1px solid var(-forth-color);
+    border: 1px solid -var(-forth-color);
 }
 
 header{
@@ -104,91 +105,9 @@ header{
     display: none;
 }
 
-/*seccion inicio*/
-
-.banner img{
-    width: 100%;
-    height: auto;
+/*seccion Ejem*/
+.contenedorEJEM {
     margin-top: 80px;
-}
-
-/* seccion destacados */
-#Destacados h1 {
-    background-color: var(--forth-color);
-    text-align: center;
-    margin: 0;
-    padding: 10px 0;
-    width: 100%;
-    font-family: Exo2, sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-    color: var(--secondary-color);
-}
-
-.contenedorD {
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
-    background-color: var(--forth-color);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.cajaD {
-    width: 30%;         
-    height: auto;        
-    background-color: var(--fifth-color); 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-}
-
-.imagenD img {
-    width: 250px;
-    height: 250px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-.textos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.textos h3 {
-    color: var(--secondary-color);
-    align-items: center;
-    font-family: Exo2, sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    min-height: 60px
-}
-
-.textos p {
-    align-items: center;
-    width: 80%;
-    font-family: Exo2, sans-serif;
-    font-size: 20px;
-    color: var(--third-color);
-    min-height: 150px;
-}
-
-#tarjeta1 {
-    margin-left: 20px;
-}
-
-#tarjeta3 {
-    margin-right: 20px;
-}
-
-#botones .btn.btn-primary {
-    color: var(--third-color);
-    font-family: Exo2, sans-serif;
-    font-weight: bold;
-    background-color: var(--secondary-color);
-    border: var(--secondary-color);
 }
 
 /*footer */
@@ -242,4 +161,3 @@ footer{
 i {
     color: var(--third-color);
 }
-
