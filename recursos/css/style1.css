@@ -298,20 +298,7 @@ i {
     .container, .container-fluid {
         padding-left: 20px;
     }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .navbar{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
+    
     .navbar-nav {
         display: flex;
         flex-direction: row;
@@ -329,9 +316,14 @@ i {
         position: relative;
         border: none;
         color: var(--third-color);
-        padding-top: 12px;
+        margin-top: 22px;
+        margin-left: 510px;
         background: none; 
         border: none;
+    }
+
+    .contenedorB{
+        margin-left: 10px;
     }
 
     .modoOscuroOn{
@@ -346,8 +338,7 @@ i {
     .iconos {
         padding-left: 20px;
         padding-right: 20px; 
-    }
-    
+    }  
 
 }
 
