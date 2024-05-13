@@ -92,6 +92,14 @@ header{
     display: none;
 }
 
+.contenedorB {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
 .modoOscuroOn {
     background-color: var(--secondary-color);
     border: 1px solid var(--main-color);
@@ -221,7 +229,7 @@ header{
     margin-right: 20px;
 }
 
-#botones .btn.btn-primary {
+.botones .btn.btn-primary {
     color: var(--third-color);
     font-family: Exo2, sans-serif;
     font-weight: bold;
