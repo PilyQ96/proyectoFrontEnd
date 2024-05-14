@@ -297,6 +297,7 @@ i {
 
     .container, .container-fluid {
         padding-left: 20px;
+        padding-top: 5px;
     }
     
     .navbar-nav {
@@ -338,8 +339,65 @@ i {
     .iconos {
         padding-left: 20px;
         padding-right: 20px; 
-    }  
+    }
 
+}    
+    
+@media (max-width: 375px)
+ and (max-height: 667px) {
+
+    header, nav {
+        width: 667px;
+    }
+
+    .container, .container-fluid {
+        padding-top: 5px;
+    }
+
+    .abrirMenu{
+        margin-left: 420px;
+    }
+    
+    .banner{
+        width: 667px;
+    }
+
+    .contenedorB{
+        margin-left: 10px;
+    }
+
+    .modoOscuroOn{
+        margin-left: 10px;
+    }
+
+    .contenedorD{
+        width: 667px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cajaD{
+        width: 75%;
+        align-self: center;
+    }
+
+    #tarjeta1 {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    #tarjeta2 {
+        margin-bottom: 20px;
+    }
+
+    #tarjeta3 {
+        margin-right: 0;
+    }
+
+    footer {
+        width: 667px;
+    }
 }
+
 
 
