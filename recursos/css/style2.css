@@ -236,4 +236,34 @@ i {
     
 }
 
+@media (max-width: 375px)
+ and (max-height: 667px) {
+
+    header, nav {
+        width: 667px;
+    }
+
+    .container, .container-fluid {
+        padding-top: 5px;
+    }
+
+    .abrirMenu{
+        margin-left: 420px;
+    }
+
+    .contenedorB{
+        margin-left: 10px;
+    }
+
+    .modoOscuroOn{
+        margin-left: 10px;
+    }
+
+    footer {
+        width: 667px;
+    }
+}
+
+
+
 
