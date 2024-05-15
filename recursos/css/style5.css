@@ -123,9 +123,19 @@ header{
     display: none;
 }
 
-/*seccion Ejem*/
-.contenedorEJEM {
+/*seccion*/
+.contenedorL {
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px; 
+    align-items: center;
+}
+
+.bloque {
+    display: flex;
+    flex-direction: row;
 }
 
 /*footer */
