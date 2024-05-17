@@ -158,6 +158,7 @@ header{
     margin-bottom: 15px;
 }
 
+/*Bloque 1*/
 #imagen1{
     width: 600px;
     height: 350px;
@@ -179,10 +180,7 @@ header{
     padding-right: 20px;
 }
 
-.contenedorP {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+/*Bloque 2*/
 
 .contenedorIMG {
     padding-top: 15px;
@@ -196,6 +194,8 @@ header{
 #parrafo1 {
     margin-left: 25px;
 }
+
+/*Bloque 3*/
 
 #parrafo2 {
     margin-right: 25px;
