@@ -73,7 +73,7 @@ header{
 }
 
 .navbar-nav li a{
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 20px;
     color: var(--third-color);
     text-decoration: none;
@@ -144,14 +144,14 @@ header{
 }
 
 .banner-items h1{
-    font-family: Dancing Script, cursive;
+    font-family: "Dancing Script", cursive;
     font-weight: bold;
     font-size: 75px;
     width: 100%;
 }
 
 .banner-items p {
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
@@ -206,7 +206,7 @@ header{
 .textos h3 {
     color: var(--secondary-color);
     align-items: center;
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
     font-weight: bold;
     min-height: 60px
@@ -215,7 +215,7 @@ header{
 .textos p {
     align-items: center;
     width: 80%;
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 20px;
     color: var(--third-color);
     min-height: 150px;
@@ -231,7 +231,7 @@ header{
 
 .botones .btn.btn-primary {
     color: var(--third-color);
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: bold;
     background-color: var(--secondary-color);
     border: var(--secondary-color);
@@ -263,14 +263,14 @@ footer{
 
 #lista li {
     margin-bottom: 10px;
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
     font-style: italic;
     color: var(--third-color);
 }
 
 #lista a {
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
     font-style: italic;
     color: var(--third-color);

@@ -73,7 +73,7 @@ header{
 }
 
 .navbar-nav li a{
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 20px;
     color: var(--third-color);
     text-decoration: none;
@@ -131,16 +131,100 @@ header{
     margin-left: 40px;
     margin-right: 40px; 
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contenedorL h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.contenedorL p {
+    font-family: "Exo 2", sans-serif;
+    font-size: 30px;
+    color: var(--third-color);
+    line-height: 1.5;
+}
+
+#titulo {
+    width: 100%;
+    text-align: center;
+}
+
+#imagen0{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#imagen1{
+    width: 600px;
+    height: 350px;
+}
+
+.bloqueN {
+    background-color: var(--fifth-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 .bloque {
     display: flex;
     flex-direction: row;
+    background-color: var(--fifth-color);
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
-#frase {
+.contenedorP {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contenedorIMG {
+    padding-top: 15px;
+}
+
+#imagen2{
+    width: 530px;
+    height: auto;
+}
+
+#parrafo1 {
+    margin-left: 25px;
+}
+
+#parrafo2 {
+    margin-right: 25px;
+}
+
+#imagen3 {
+    width: 500px;
+    height: auto;
+}
+
+#contenedorFrase {
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.fa-leaf{
+    color: var(--fifth-color);
+    margin-top: 10px;
+}
+
+#frase{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /*footer */
@@ -169,14 +253,14 @@ footer{
 
 #lista li {
     margin-bottom: 10px;
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
     font-style: italic;
     color: var(--third-color);
 }
 
 #lista a {
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
     font-style: italic;
     color: var(--third-color);
