@@ -73,7 +73,7 @@ header{
 }
 
 .navbar-nav li a{
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 20px;
     color: var(--third-color);
     text-decoration: none;
@@ -123,15 +123,90 @@ header{
     display: none;
 }
 
-/*seccion Ejem*/
-.contenedorEJEM {
-    margin-top: 80px;
+/*seccion*/
+.contenedorL {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px; 
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contenedorL h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contenedorL p {
+    font-family: "Exo 2", sans-serif;
+    font-size: 30px;
+    color: var(--third-color);
+    line-height: 1.5;
+}
+
+.bloque {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--fifth-color);
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*Bloque 1*/
+
+#imagen1{
+    width: 533px;
+    height: 325px;
+    margin-top: 10px;
+}
+
+#parrafo1 {
+    padding-top: 20px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+/*Bloque2*/
+#bloqueN {
+    background-color: var(--fifth-color);
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 18px;
+}
+
+/*Bloque3*/
+
+#imagen2 {
+    width: 467px ;
+    height: 303px;
+}
+
+#parrafo2 {
+    padding-right: 10px;
+}
+
+/*Bloque4*/
+#imagen3 {
+    width: 380px;
+    height: 530px;
+    margin-right: 20px;
+}
+
+#parrafo3{
+    padding-bottom: 10px;
 }
 
 /*footer */
 
 footer{
     background-color: var(--secondary-color);
+    margin-top: 25px;
 }
 
 .contenedorF {
@@ -161,7 +236,7 @@ footer{
 }
 
 #lista a {
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
     font-style: italic;
     color: var(--third-color);
