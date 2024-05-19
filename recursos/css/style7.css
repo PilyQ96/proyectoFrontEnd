@@ -418,6 +418,55 @@ i {
         margin-left: 10px;
     }
 
+    /*seccion*/
+    section{
+        width: 667px;
+    }
+
+    .contenedorL{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #parrafo1{
+        padding-top: 15px;
+
+    }
+
+    #imagen1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    #imagen1 img {
+        width: 515px;
+        height: 515px;
+    }
+    
+    #imagen2{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    #imagen2 img {
+        width: 450px;
+        height: 455px;
+    }
+
+    .contenedorI{
+        width: 667px;
+    }
+
+
+    #ayuda{
+        width: 640px;
+        height: 540px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
     /*footer*/
 
     footer {
