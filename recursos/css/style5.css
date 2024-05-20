@@ -257,6 +257,8 @@ i {
 
 @media (max-width: 768px) {
 
+    /*navbar*/
+
     header, nav {
         width: 768px;
     }
@@ -296,6 +298,45 @@ i {
         margin-left: 10px;
     }
 
+    /*seccion*/
+    
+    .contenedorL {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+
+    .bloque {
+        flex-direction: column;
+    }
+
+    /*Bloque 1*/
+
+    #imagen1{
+        margin-left: 60px;
+    }
+
+    #parrafo1 {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    /*Bloque3*/
+
+    #imagen2 {
+        width: 517px ;
+        height: 350px;
+        margin-left: 60px;
+    }
+
+    /*Bloque4*/
+
+    #imagen3 {
+        margin-left: 140px;
+    }
+
+    /*footer*/
+
     #lista {
         margin-left: 20px;
         margin-right: 20px; 
@@ -309,6 +350,8 @@ i {
 
 @media (max-width: 375px)
  and (max-height: 667px) {
+
+    /*navbar*/
 
     header, nav {
         width: 667px;
@@ -329,6 +372,33 @@ i {
     .modoOscuroOn{
         margin-left: 10px;
     }
+
+    /*seccion*/
+    
+    section{
+        width: 667px;
+    }
+
+    /*Bloque 1*/
+
+    #imagen1{
+        margin-left: 10px;
+    }
+
+    /*Bloque3*/
+
+    #imagen2 {
+        margin-left: 18px;
+    }
+
+    /*Bloque4*/
+
+    #imagen3 {
+        margin-left: 90px;
+        margin-bottom: 15px;
+    }
+
+    /*footer*/
 
     footer {
         width: 667px;
