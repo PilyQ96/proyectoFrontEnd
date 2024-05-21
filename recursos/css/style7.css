@@ -35,7 +35,7 @@ html{
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    border: 1px solid -var(-forth-color);
+    border: 1px solid var(--forth-color);
 }
 
 header{
@@ -43,8 +43,14 @@ header{
     position: fixed;
     left: 0;
     top: 0;
+    right: 0;
     width: 100%;
     z-index: 100;
+}
+
+.contenedorN {
+    display: flex;
+    flex-direction: row;
 }
 
 .navbar {
@@ -57,6 +63,8 @@ header{
 .navbar-nav {
     display: flex;
     align-items: center;
+    padding-left: 680px;
+    padding-top: 15px;
 }
 
 .navbar-nav li {
@@ -65,7 +73,7 @@ header{
 }
 
 .navbar-nav li a{
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 20px;
     color: var(--third-color);
     text-decoration: none;
@@ -83,6 +91,14 @@ header{
 .cerrarMenu {
     display: none;
 }
+
+.contenedorB {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 
 .modoOscuroOn {
     background-color: var(--secondary-color);
@@ -107,9 +123,106 @@ header{
     display: none;
 }
 
-/*seccion Ejem*/
-.contenedorEJEM {
-    margin-top: 80px;
+/*seccion*/
+.contenedorL {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px; 
+    align-items: center;
+}
+
+.contenedorL h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.contenedorL p {
+    font-family: "Exo 2", sans-serif;
+    font-size: 30px;
+    color: var(--third-color);
+    line-height: 1.5;
+}
+
+#titulo{
+    background-color: var(--fifth-color);
+    width: 100%;
+    text-align: center;
+}
+
+.bloque {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--fifth-color);
+    padding-bottom: 25px;
+}
+
+#parrafo1 {
+    padding-top: 55px;
+    padding-left: 35px;
+    padding-right: 30px;
+
+}
+
+#imagen1 {
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+#imagen1 img {
+    width: 415px;
+    height: 432px;
+}
+
+#imagen2{
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right: 25px;
+}
+
+#imagen2 img {
+    width: 450px;
+    height: 467px;
+}
+
+#parrafo2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+
+}
+
+.bloqueN {
+    background-color: var(--fifth-color);
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.contenedorI {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.pet{
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+}
+
+
+#ayuda{
+    border-radius: 20%;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 /*footer */
@@ -138,14 +251,14 @@ footer{
 
 #lista li {
     margin-bottom: 10px;
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
     font-style: italic;
     color: var(--third-color);
 }
 
 #lista a {
-    font-family: Exo2, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 25px;
     font-style: italic;
     color: var(--third-color);
@@ -162,4 +275,85 @@ footer{
 
 i {
     color: var(--third-color);
+}
+
+@media (max-width: 768px) {
+
+    header, nav {
+        width: 768px;
+    }
+
+    .container, .container-fluid {
+        padding-left: 20px;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-start;
+        padding-left: 10px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .abrirMenu{
+        display: block;
+        position: relative;
+        border: none;
+        color: var(--third-color);
+        margin-top: 22px;
+        margin-left: 510px;
+        background: none; 
+        border: none;
+    }
+
+    .contenedorB{
+        margin-left: 10px;
+    }
+
+    .modoOscuroOn{
+        margin-left: 10px;
+    }
+
+    #lista {
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+    
+    .iconos {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }  
+
+}
+
+@media (max-width: 375px)
+ and (max-height: 667px) {
+
+    header, nav {
+        width: 667px;
+    }
+
+    .container, .container-fluid {
+        padding-top: 5px;
+    }
+
+    .abrirMenu{
+        margin-left: 420px;
+    }
+
+    .contenedorB{
+        margin-left: 10px;
+    }
+
+    .modoOscuroOn{
+        margin-left: 10px;
+    }
+
+    footer {
+        width: 667px;
+    }
 }

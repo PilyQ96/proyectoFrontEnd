@@ -16,33 +16,39 @@
     <a class="nivel" href="./index.html">nivel1</a>
     <Header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container fluid" id="cabecera">
-                <a href="#" class="nav-brand">
-                    <img id="logotipo" src="./recursos/imagenes/WhatsApp Image 2024-04-28 at 21.53.18.jpeg" alt="logo"> <!--logotipo de la pagina-->
-                </a>
+            <div class="contenedorN">
+                <div class="container-fluid" id="cabecera">
+                    <a href="#">
+                        <img id="logotipo" src="./recursos/imagenes/WhatsApp Image 2024-04-28 at 21.53.18.jpeg" alt="logo"> <!--logotipo de la pagina-->
+                    </a>
+                </div>
+                <div>
+                <button class="abrirMenu">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+                <button class="cerrarMenu">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </button>
+                <ul class="navbar-nav me-auto mb-2 lg-0">
+                    <li class="nav-item"><a href="#">Inicio</a></li>
+                    <li class="nav-item"><a href="#SobreMi">Sobre mi</a></li> 
+                    <li class="nav-item"><a href="#Reseñas">Reseñas</a></li>
+                    <li class="nav-item"><a href="#Destacados">Destacados</a></li>
+                    <li class="nav-item"><a href="./paginas/formulario.html">Contacto</a></li> 
+                </ul>
+                </div>
+                <div class="contenedorB">
+                    <a href="./paginas/sesiones/login.html">
+                        <i class="fa-solid fa-circle-user fa-2x"></i>
+                    </a>
+                    <button class="modoOscuroOn">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button class="modoOscuroOff">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </div>
             </div>
-            <button class="abrirMenu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <button class="cerrarMenu">
-                <i class="fa-regular fa-circle-xmark"></i>
-            </button>
-            <ul class="navbar-nav me-auto mb-2 mn-lg-0">
-                <li class="nav-item"><a href="#">Inicio</a></li>
-                <li class="nav-item"><a href="#SobreMi">Sobre mi</a></li> 
-                <li class="nav-item"><a href="#Reseñas">Reseñas</a></li>
-                <li class="nav-item"><a href="#Destacados">Destacados</a></li>
-                <li class="nav-item"><a href="./paginas/formulario.html">Contacto</a></li> 
-                <a href="./paginas/sesiones/login.html">
-                    <i class="fa-solid fa-circle-user fa-2x"></i>
-                </a>
-                <button class="modoOscuroOn">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-                <button class="modoOscuroOff">
-                    <i class="fa-solid fa-sun"></i>
-                </button>
-            </ul>
         </nav>
     </Header>
     <div class="banner">
@@ -75,8 +81,9 @@
                 </div>
                 <div class="textos">
                     <h3>Terapia de parejas</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae luctus dui, eget tempor libero. Nulla eget est ut odio viverra eleifend viverra non dui. </p>
-                    <div id="botones">
+                    <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae
+                         luctus dui, eget tempor libero. Nulla eget est ut odio viverra eleifend viverra non dui. </p>
+                    <div class="botones">
                         <a class="btn btn-primary" href="./paginas/paglecturas/terapiaparejas.html" role="button">Leer mas</a>    
                     </div>
                 </div>
@@ -87,8 +94,9 @@
                 </div>
                 <div class="textos">
                     <h3>Terapia infantil</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae luctus dui, eget tempor libero. Nulla eget est ut odio viverra eleifend viverra non dui. </p>                 
-                    <div id="botones">
+                    <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae
+                         luctus dui, eget tempor libero. Nulla eget est ut odio viverra eleifend viverra non dui.</p>
+                    <div class="botones">
                         <a class="btn btn-primary" href="./paginas/paglecturas/terapiaInf.html" role="button">Leer mas</a>    
                     </div>
                 </div>
@@ -98,9 +106,10 @@
                     <img src="./recursos/imagenes/Captura de pantalla (1901).png" alt="">
                 </div>
                 <div class="textos">
-                    <h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terapia <br> cognitivo-conductual</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae luctus dui, eget tempor libero. Nulla eget est ut odio viverra eleifend viverra non dui. </p>
-                    <div id="botones">
+                    <h3>Terapia <br> cognitivo-conductual</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae luctus dui,
+                         eget tempor libero. Nulla eget est ut odio viverra eleifend viverra non dui. </p>
+                    <div class="botones">
                         <a class="btn btn-primary" href="./paginas/paglecturas/terapiaCientifica.html" role="button">Leer mas</a>    
                     </div>
                 </div>
