@@ -13,6 +13,10 @@
 body {
     background-color: var(--main-color);
     padding-top: 70px;
+    background-image: url("https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto ;
 }
 
 section[id] {
@@ -124,9 +128,76 @@ header{
 }
 
 /*seccion Ejem*/
-.contenedorEJEM {
-    margin-top: 80px;
-}
+
+   .formContenedor{
+       margin: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: 50px;
+   }
+   form {
+     width: 450px;
+     margin: auto;
+     background:rgba(0,0,0,0,70);
+     padding: 10px 20px;
+     box-sizing: border-box;
+     margin-top: 20px;
+     border-radius: 7px;
+   }
+   h2 {
+     color: #805841; 
+     text-align: center;
+     width: 100%; 
+   }
+   label {
+     display: block;
+     margin: 10px 0 5px;
+     color: #dcf7f3; 
+     width: 100%;
+     margin-right: 10px; 
+   }
+   input[type="text"],
+   input[type="email"],input[type="password"] {
+     width: calc(100% - 20px);
+     padding: 7px;
+     margin-bottom: 20px;
+     border: 1px solid #ffd8d8; 
+     border-radius: 5px;
+     background-color: #fffcdd; 
+     box-sizing: border-box;
+   }
+   .checkbox-container {
+     display: flex;
+     align-items: center;
+     margin: 10px;
+   }
+   .checkbox-container input[type="checkbox"] {
+     margin-right: 10px; 
+   }
+   input[type="submit"] {
+     background-color: #ffd8d8; 
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 100%;
+   }
+   input[type="submit"]:hover {
+     background-color: #f5a2a2; 
+   }
+   .error{
+     border-color: red;
+     color: red;
+   }
+   .link{
+       color: #805841;
+       background-color: #dcf7f3;
+   }
+   .mal{
+       color:#f5a2a2;
+   }
 
 /*footer */
 

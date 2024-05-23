@@ -157,6 +157,49 @@ header{
     font-weight: bold;
     width: 60%;
 }
+/*seccion sobre mi*/
+
+/*body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffd8d8;
+}*/
+
+.contenedorS {
+    padding: 20px;
+}
+
+.text-and-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.presentacion {
+    flex: 1;
+    margin: 0;
+    padding-right: 20px; 
+    
+    color: #805841;
+    font-size: 22px;
+}
+
+.imagenSico {
+    width:300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    background-size: cover;
+}
+
+.textoS {
+    width: 100%;
+    margin-top: 20px;
+    color:#805841 ;
+    font-size: 22px;
+    background-color:#f5a2a2;
+}
 
 /* seccion destacados */
 #Destacados h1 {
