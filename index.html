@@ -14,43 +14,48 @@
 </head>
 <body>
     <a class="nivel" href="./index.html">nivel1</a>
-    <Header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="contenedorN">
-                <div class="container-fluid" id="cabecera">
-                    <a href="#">
-                        <img id="logotipo" src="./recursos/imagenes/WhatsApp Image 2024-04-28 at 21.53.18.jpeg" alt="logo"> <!--logotipo de la pagina-->
-                    </a>
-                </div>
-                <div>
-                <button class="abrirMenu">
-                    <i class="fa-solid fa-bars fa-2x"></i>
-                </button>
-                <button class="cerrarMenu">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </button>
-                <ul class="navbar-nav me-auto mb-2 lg-0">
-                    <li class="nav-item"><a href="#">Inicio</a></li>
-                    <li class="nav-item"><a href="#SobreMi">Sobre mi</a></li> 
-                    <li class="nav-item"><a href="#Reseñas">Reseñas</a></li>
-                    <li class="nav-item"><a href="#Destacados">Destacados</a></li>
-                    <li class="nav-item"><a href="./paginas/formulario.html">Contacto</a></li> 
+    <header>
+        <nav class="barraNav">
+            <a class="logo" href="#">
+                <img id="logotipo" src="./recursos/imagenes/logoPsico.jpeg" alt="logo">
+            </a>
+            <button class="abrirMenu">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+            <div class="contenedorList">
+                <ul>
+                    <li>
+                        <button class="cerrarMenu">
+                            <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                        </button>
+                    </li>
+                    <li class="navItem"><a href="#">Inicio</a></li>
+                    <li class="navItem"><a href="#SobreMi">Sobre mi</a></li>
+                    <li class="navItem"><a href="#Destacados">Destacados</a></li>
+                    <li class="navItem"><a href="./paginas/formulario.html">Contacto</a></li>
                 </ul>
-                </div>
-                <div class="contenedorB">
-                    <a href="./paginas/sesiones/login.html">
-                        <i class="fa-solid fa-circle-user fa-2x"></i>
-                    </a>
-                    <button class="modoOscuroOn">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
-                    <button class="modoOscuroOff">
-                        <i class="fa-solid fa-sun"></i>
-                    </button>
-                </div>
+            </div>
+            <div class="contenedorIconos">
+                <ul>
+                    <li>
+                        <a href="./paginas/sesiones/login.html">
+                            <i class="fa-solid fa-circle-user fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <button class="btn btn-secondary modoOscuroOn">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-secondary modoOscuroOff">
+                            <i class="fa-solid fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </nav>
-    </Header>
+    </header>
     <div class="banner">
         <div class="banner-items">
             <h1>Bienvenidos a Lorem Ipsum</h1>
@@ -65,9 +70,7 @@
                <b>¡Hola! Soy Isabel Mercado, y estoy encantada de darte la bienvenida a mi práctica psicológica.</b>
                <p>Mi práctica está abierta a adolescentes y adultos que buscan apoyo para una amplia variedad de problemas de salud mental. Desde la ansiedad y la depresión hasta el manejo del estrés y los trastornos de la alimentación, estoy aquí para ofrecer un espacio seguro y de apoyo donde puedas explorar tus desafíos y trabajar hacia soluciones significativas. Además, tengo experiencia trabajando con parejas y familias que buscan fortalecer sus relaciones y resolver conflictos de manera constructiva.</p>
                </div>
-             
-             <img src="C:\Users\maria\OneDrive\Escritorio\MATEO\IMG-20240504-WA0027.jpg" alt="baner" class="imagenSico"> <!--foto del psicologo-->
-             
+                <img src="./recursos/imagenes/Psicologa.png" alt="baner" class="imagenSico"> <!--foto del psicologo-->
             </div>
             <div class="textoS">
                 <p><b>Si estás listo para dar el primer paso hacia una vida más saludable y equilibrada, te animo a que te pongas en contacto conmigo. Juntos, podemos explorar tus metas y desafíos, y trabajar hacia un futuro más brillante y satisfactorio. No estás solo en este viaje; estoy aquí para apoyarte en cada paso del camino.
@@ -76,19 +79,12 @@
                 
             </div>
        </div> 
-    </section>
-    <section id="Reseñas">    <!--seccion de comentarios de pacientes-->
-        <div>
-            <img src="./recursos/imagenes/Captura de pantalla (1870).png" alt="">
-        </div>
-        <h1>Comentarios de mis pacientes</h1>
-    </section>
     <section id="Destacados"> <!--lecturas recomendadas por el profesional-->
             <h1>Lecturas interesantes</h1>
         <div class="contenedorD">
             <div class="cajaD" id="tarjeta1">
                 <div class="imagenD">
-                    <img src="./recursos/imagenes/Captura de pantalla (1896).png" alt="">
+                    <img src="./recursos/imagenes/psicologiaParejas.png" alt="">
                 </div>
                 <div class="textos">
                     <h3>Terapia de parejas</h3>
@@ -101,7 +97,7 @@
             </div>
             <div class="cajaD" id="tarjeta2">
                 <div class="imagenD">
-                    <img src="./recursos/imagenes/Captura de pantalla (1897).png" alt="">
+                    <img src="./recursos/imagenes/psicologiaInfantil.png" alt="">
                 </div>
                 <div class="textos">
                     <h3>Terapia infantil</h3>
@@ -114,7 +110,7 @@
             </div>
             <div class="cajaD" id="tarjeta3">
                 <div class="imagenD">
-                    <img src="./recursos/imagenes/Captura de pantalla (1901).png" alt="">
+                    <img src="./recursos/imagenes/PsicologiaCientifica.png" alt="">
                 </div>
                 <div class="textos">
                     <h3>Terapia <br> cognitivo-conductual</h3>
@@ -153,5 +149,6 @@
             </div>
         </div>
     </footer>
+    <script src="./recursos/javascript/menu.js"></script>
 </body>
 </html>

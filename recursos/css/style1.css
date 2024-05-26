@@ -1,13 +1,18 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* selector de colores*/
 :root {
     --main-color: #fffcdd;
     --secondary-color: #805841;
     --third-color: #dcf7f3;
     --forth-color: #ffd8d8;
     --fifth-color: #f5a2a2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,28 +22,27 @@ body {
 
 section[id] {
     scroll-margin-top: 80px;
-
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-/*Header y navbar*/
+/* Header y navbar */
 .nivel {
     display: none;
 }
 
-/*logo */
-
+/* Logo */
 #logotipo {
     width: 65px;
     height: 65px;
     border-radius: 50%;
     border: 1px solid var(--forth-color);
+    margin-left: 15px;
 }
 
-header{
+header {
     background-color: var(--secondary-color);
     position: fixed;
     left: 0;
@@ -46,67 +50,73 @@ header{
     right: 0;
     width: 100%;
     z-index: 100;
-}
-
-.contenedorN {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.navbar {
+.barraNav {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    text-decoration: none;
 }
 
-.navbar-nav {
+
+.contenedorList {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding-left: 680px;
-    padding-top: 15px;
+    margin-top: 20px;
 }
 
-.navbar-nav li {
+.contenedorList ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.contenedorList ul li {
     margin-right: 20px;
-    white-space: nowrap;
 }
 
-.navbar-nav li a{
+.contenedorList li a{
     font-family: "Exo 2", sans-serif;
     font-size: 20px;
     color: var(--third-color);
     text-decoration: none;
 }
 
-.nav-item:hover {
+.navItem:hover {
     background-color: var(--fifth-color);
     border-radius: 50%;
 }
 
-.abrirMenu {
-    display: none;
-}
-
-.cerrarMenu {
-    display: none;
-}
-
-.contenedorB {
+.contenedorIconos ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
     align-items: center;
-    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
+.contenedorIconos ul li {
+    margin-left: 15px;
+}
+
+.fa-circle-user{
+    color: var(--third-color);
+}
+
+.fa-circle-user:hover{
+    background-color: var(--fifth-color);
+    border-radius: 50%;
+}
 
 .modoOscuroOn {
     background-color: var(--secondary-color);
     border: 1px solid var(--main-color);
     border-radius: 50%;
     color: var(--third-color);
-    margin-right: 10px;
-    margin-left: 5px;
     padding: 8px;
     cursor: pointer;
     font-size: 20px;
@@ -123,10 +133,18 @@ header{
     display: none;
 }
 
+.abrirMenu {
+    display: none;
+}
+
+.cerrarMenu {
+    display: none;
+}
+
 /*seccion inicio*/
 
 .banner {
-    background-image: url(../imagenes/Captura\ de\ pantalla\ \(1887\).png);
+    background-image: url(../imagenes/bannerInicio.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -159,13 +177,6 @@ header{
 }
 /*seccion sobre mi*/
 
-/*body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #ffd8d8;
-}*/
-
 .contenedorS {
     padding: 20px;
 }
@@ -174,15 +185,20 @@ header{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    background-color: var(--forth-color);
 }
 
 .presentacion {
     flex: 1;
     margin: 0;
     padding-right: 20px; 
-    
-    color: #805841;
+    padding-left: 10px;
+    color: var(--secondary-color);
     font-size: 22px;
+}
+
+.presentacion h1 {
+    text-align: center;
 }
 
 .imagenSico {
@@ -195,10 +211,13 @@ header{
 
 .textoS {
     width: 100%;
-    margin-top: 20px;
-    color:#805841 ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:var(--secondary-color);
     font-size: 22px;
-    background-color:#f5a2a2;
+    background-color:var(--fifth-color);
 }
 
 /* seccion destacados */
@@ -339,45 +358,24 @@ i {
 
 @media (max-width: 768px) {
 
-    /*navbar*/
-
-    header, nav {
-        width: 768px;
-    }
-    
-    .container, .container-fluid {
-        padding-left: 20px;
-        padding-top: 5px;
-    }
-    
-    .navbar-nav {
-        display: flex;
-        flex-direction: row;  
-        align-items: center;
-        justify-content:flex-start;
-        padding-left: 10px;
+    /*header y navbar*/
+    header{
+        flex-wrap: wrap;
     }
 
-    .nav-item {
-        display: none;
+    .contenedorIconos {
+        flex-wrap: wrap;
     }
 
-    .abrirMenu{
-        display: block;
-        position: relative;
-        border: none;
-        color: var(--third-color);
-        margin-top: 22px;
-        margin-left: 510px;
-        background: none; 
-        border: none;
+    .contenedorList ul {
+        flex-wrap: wrap;
     }
 
-    .contenedorB{
-        margin-left: 10px;
+    .contenedorList ul li {
+        margin-right: 10px;
     }
 
-    .modoOscuroOn{
+    .contenedorIconos ul li {
         margin-left: 10px;
     }
 
@@ -401,49 +399,100 @@ i {
         margin-top: 30px;
     }
 
-    /*footer*/
+    /*pie de pagina*/
 
-    #lista {
-        margin-left: 20px;
-        margin-right: 20px; 
+    .contenedorF {
+        padding: 20px;
     }
+
+    #lista{
+        margin-left: 20px;
+    } 
     
     .iconos {
-        padding-left: 20px;
-        padding-right: 20px; 
+        padding: 10px;
     }
+}
 
-}    
     
-@media (max-width: 375px)
- and (max-height: 667px) {
+@media (max-width: 375px) {
 
-    /*navbar*/
-
-    header, nav {
-        width: 667px;
+    body{
+        padding-top: 0;
     }
 
-    .container, .container-fluid {
-        padding-top: 5px;
+    /*Barra de navegacion*/
+    header {
+        z-index: 99;
+    }
+
+    .contenedorList {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+        background-color: var(--fifth-color);
+        pointer-events: none;
+        margin-top: 0px;
+        padding-top: 20px;
+        opacity: 0;
+    }
+    
+    .contenedorList ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorList ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .navItem:hover {
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+    }
+
+    .contenedorIconos{
+        width: 100%;
+        margin-left: 30px;
     }
 
     .abrirMenu{
-        margin-left: 420px;
+        display: block;
+        background-color: var(--secondary-color);
+        color: var(--third-color);
+        border: none;
+        align-self: center;
+        margin-left: 100px;
     }
 
-    .contenedorB{
-        margin-left: 10px;
+    .cerrarMenu{
+        display: block;
+        background-color: var(--fifth-color);
+        color: var(--secondary-color);
+        border: none;
+        align-self: center;
     }
 
-    .modoOscuroOn{
-        margin-left: 10px;
+    .menuAbierto{
+        opacity: 1;
+        pointer-events: all;
     }
 
     /*banner*/
 
-    .banner{
-        width: 667px;
+    .banner-items {
+        padding: 10px;
+        margin-top: 0;
     }
 
     .banner-items h1{
@@ -451,14 +500,36 @@ i {
         font-size: 60px;
     }
 
-    /*seccion Destacados*/
+    /*seccion Sobre Mi*/
 
-    #Destacados {
-        width: 667px;
+
+    .text-and-image {
+        flex-direction: column;
     }
 
+    .presentacion {
+        padding-right: 10px; 
+        padding-left: 5px;
+    }
+
+    .imagenSico {
+        width:300px; 
+        height: 300px; 
+        border-radius: 50%; 
+        object-fit: cover;
+        background-size: cover;
+    }
+
+    .textoS {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /*seccion Destacados*/
+
     .contenedorD{
-        width: 667px;
         flex-direction: column;
         align-items: center;
     }
@@ -501,8 +572,11 @@ i {
         min-height: auto;
     }
 
-    footer {
-        width: 667px;
+    /*pie de pagina*/
+    .contenedorF {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
