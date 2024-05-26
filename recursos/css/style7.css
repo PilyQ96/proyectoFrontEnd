@@ -24,21 +24,21 @@ html{
     scroll-behavior: smooth;
 }
 
-/*Header y navbar*/
+/* Header y navbar */
 .nivel {
     display: none;
 }
 
-/*logo */
-
+/* Logo */
 #logotipo {
     width: 65px;
     height: 65px;
     border-radius: 50%;
     border: 1px solid var(--forth-color);
+    margin-left: 15px;
 }
 
-header{
+header {
     background-color: var(--secondary-color);
     position: fixed;
     left: 0;
@@ -46,67 +46,73 @@ header{
     right: 0;
     width: 100%;
     z-index: 100;
-}
-
-.contenedorN {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.navbar {
+.barraNav {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    text-decoration: none;
 }
 
-.navbar-nav {
+
+.contenedorList {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding-left: 680px;
-    padding-top: 15px;
+    margin-top: 20px;
 }
 
-.navbar-nav li {
+.contenedorList ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.contenedorList ul li {
     margin-right: 20px;
-    white-space: nowrap;
 }
 
-.navbar-nav li a{
+.contenedorList li a{
     font-family: "Exo 2", sans-serif;
     font-size: 20px;
     color: var(--third-color);
     text-decoration: none;
 }
 
-.nav-item:hover {
+.navItem:hover {
     background-color: var(--fifth-color);
     border-radius: 50%;
 }
 
-.abrirMenu {
-    display: none;
-}
-
-.cerrarMenu {
-    display: none;
-}
-
-.contenedorB {
+.contenedorIconos ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
     align-items: center;
-    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
+.contenedorIconos ul li {
+    margin-left: 15px;
+}
+
+.fa-circle-user{
+    color: var(--third-color);
+}
+
+.fa-circle-user:hover{
+    background-color: var(--fifth-color);
+    border-radius: 50%;
+}
 
 .modoOscuroOn {
     background-color: var(--secondary-color);
     border: 1px solid var(--main-color);
     border-radius: 50%;
     color: var(--third-color);
-    margin-right: 10px;
-    margin-left: 5px;
     padding: 8px;
     cursor: pointer;
     font-size: 20px;
@@ -120,6 +126,14 @@ header{
 }
 
 .modoOscuroOff {
+    display: none;
+}
+
+.abrirMenu {
+    display: none;
+}
+
+.cerrarMenu {
     display: none;
 }
 
@@ -279,92 +293,41 @@ i {
 
 @media (max-width: 768px) {
 
-    /*navbar*/
-
-    header, nav {
-        width: 768px;
+    /*header y navbar*/
+    header{
+        flex-wrap: wrap;
     }
 
-    .container, .container-fluid {
-        padding-left: 20px;
-    }
-    
-    .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:flex-start;
-        padding-left: 10px;
+    .contenedorIconos {
+        flex-wrap: wrap;
     }
 
-    .nav-item {
-        display: none;
+    .contenedorList ul {
+        flex-wrap: wrap;
     }
 
-    .abrirMenu{
-        display: block;
-        position: relative;
-        border: none;
-        color: var(--third-color);
-        margin-top: 22px;
-        margin-left: 510px;
-        background: none; 
-        border: none;
+    .contenedorList ul li {
+        margin-right: 10px;
     }
 
-    .contenedorB{
-        margin-left: 10px;
-    }
-
-    .modoOscuroOn{
+    .contenedorIconos ul li {
         margin-left: 10px;
     }
 
     /*seccion*/
-
-    section{
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 768px;
-    }
-
-    .contenedorL{
-        margin-top: 60px;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
-    .bloque{
+  
+    .bloque {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    #parrafo1{
-        padding-top: 25px;
-
+    #imagen1, #imagen2 {
+        padding: 0;
     }
 
-    #imagen1 {
-        margin-left: 75px;
-        margin-right: 75px;
-    }
-    
-    #imagen1 img {
-        width: 515px;
-        height: 515px;
-    }
-    
-    #imagen2{
-        margin-left: 85px;
-        margin-right: 85px;
-    }
-    
-    #imagen2 img {
-        width: 450px;
-        height: 455px;
-    }
-
-    .contenedorI{
-        width: 768px;
+    #parrafo1, #parrafo2 {
+        padding: 20px;
     }
 
     .pet{
@@ -372,104 +335,140 @@ i {
     }
 
     #ayuda{
-        width: 650px;
-        height: 550px;
+        margin-right: 10px;
         margin-left: 10px;
-        margin-right: 0px;
-        margin-top: 15px;
-        margin-bottom: 15px;
     }
-    /*footer*/
 
-    #lista {
-        margin-left: 20px;
-        margin-right: 20px; 
+    .contenedorI img {
+        max-width: 700px;
+        margin: 10px;
     }
+
+    /*pie de pagina*/
+
+    .contenedorF {
+        padding: 20px;
+    }
+
+    #lista{
+        margin-left: 20px;
+    } 
     
     .iconos {
-        padding-left: 20px;
-        padding-right: 20px; 
-    }  
+        padding: 10px;
+    }
 
 }
 
-@media (max-width: 375px)
- and (max-height: 667px) {
+@media (max-width: 375px) {
 
-    /*navbar*/
-
-    header, nav {
-        width: 667px;
+    body{
+        padding-top: 0;
     }
 
-    .container, .container-fluid {
-        padding-top: 5px;
+    /*Barra de navegacion*/
+    header {
+        z-index: 99;
+    }
+
+    .contenedorList {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+        background-color: var(--fifth-color);
+        pointer-events: none;
+        margin-top: 0px;
+        padding-top: 20px;
+        opacity: 0;
+    }
+    
+    .contenedorList ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorList ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .navItem:hover {
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+    }
+
+    .contenedorIconos{
+        width: 100%;
+        margin-left: 30px;
     }
 
     .abrirMenu{
-        margin-left: 420px;
+        display: block;
+        background-color: var(--secondary-color);
+        color: var(--third-color);
+        border: none;
+        align-self: center;
+        margin-left: 100px;
     }
 
-    .contenedorB{
-        margin-left: 10px;
+    .cerrarMenu{
+        display: block;
+        background-color: var(--fifth-color);
+        color: var(--secondary-color);
+        border: none;
+        align-self: center;
     }
 
-    .modoOscuroOn{
-        margin-left: 10px;
+    .menuAbierto{
+        opacity: 1;
+        pointer-events: all;
     }
 
     /*seccion*/
-    section{
-        width: 667px;
+    .contenedorL {
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
-    .contenedorL{
-        margin-left: 30px;
-        margin-right: 30px;
+    #parrafo1, #parrafo2 {
+        padding: 10px;
     }
-
-    #parrafo1{
-        padding-top: 15px;
-
-    }
-
-    #imagen1 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
+   
     #imagen1 img {
-        width: 515px;
-        height: 515px;
+        width: 315px;
+        height: 332px;
     }
     
-    #imagen2{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
     
     #imagen2 img {
-        width: 450px;
-        height: 455px;
+        width: 320px;
+        height: 337px;
     }
-
-    .contenedorI{
-        width: 667px;
-    }
-
 
     #ayuda{
-        width: 640px;
-        height: 540px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
-    /*footer*/
+    .contenedorI img {
+        max-width: 350px;
+        margin: 5px;
+    }
 
-    footer {
-        width: 667px;
+    /*pie de pagina*/
+    .contenedorF {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
