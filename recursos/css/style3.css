@@ -13,36 +13,35 @@
 body {
     background-color: var(--main-color);
     padding-top: 70px;
-   /* background-image: url("https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg");
-     background-size: cover;
-     background-attachment: fixed;
-     margin: auto ; */
+    background-image: url("https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto ;
 }
 
 section[id] {
     scroll-margin-top: 80px;
-
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-/*Header y navbar*/
+/* Header y navbar */
 .nivel {
     display: none;
 }
 
-/*logo */
-
+/* Logo */
 #logotipo {
     width: 65px;
     height: 65px;
     border-radius: 50%;
     border: 1px solid var(--forth-color);
+    margin-left: 15px;
 }
 
-header{
+header {
     background-color: var(--secondary-color);
     position: fixed;
     left: 0;
@@ -50,67 +49,73 @@ header{
     right: 0;
     width: 100%;
     z-index: 100;
-}
-
-.contenedorN {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.navbar {
+.barraNav {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    text-decoration: none;
 }
 
-.navbar-nav {
+
+.contenedorList {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding-left: 680px;
-    padding-top: 15px;
+    margin-top: 20px;
 }
 
-.navbar-nav li {
+.contenedorList ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.contenedorList ul li {
     margin-right: 20px;
-    white-space: nowrap;
 }
 
-.navbar-nav li a{
-    font-family: Exo2, sans-serif;
+.contenedorList li a{
+    font-family: "Exo 2", sans-serif;
     font-size: 20px;
     color: var(--third-color);
     text-decoration: none;
 }
 
-.nav-item:hover {
+.navItem:hover {
     background-color: var(--fifth-color);
     border-radius: 50%;
 }
 
-.abrirMenu {
-    display: none;
-}
-
-.cerrarMenu {
-    display: none;
-}
-
-.contenedorB {
+.contenedorIconos ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
     align-items: center;
-    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
+.contenedorIconos ul li {
+    margin-left: 15px;
+}
+
+.fa-circle-user{
+    color: var(--third-color);
+}
+
+.fa-circle-user:hover{
+    background-color: var(--fifth-color);
+    border-radius: 50%;
+}
 
 .modoOscuroOn {
     background-color: var(--secondary-color);
     border: 1px solid var(--main-color);
     border-radius: 50%;
     color: var(--third-color);
-    margin-right: 10px;
-    margin-left: 5px;
     padding: 8px;
     cursor: pointer;
     font-size: 20px;
@@ -127,77 +132,99 @@ header{
     display: none;
 }
 
-/*seccion Ejem*/
+.abrirMenu {
+    display: none;
+}
 
-   .formContenedor{
-       margin: 0;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       margin-left: 50px;
-   }
-   form {
-     width: 450px;
-     margin: auto;
-     background:rgba(0,0,0,0,70);
-     padding: 10px 20px;
-     box-sizing: border-box;
-     margin-top: 20px;
-     border-radius: 7px;
-   }
-   h2 {
-     color: #805841; 
-     text-align: center;
-     width: 100%; 
-   }
-   label {
-     display: block;
-     margin: 10px 0 5px;
-     color: #dcf7f3; 
-     width: 100%;
-     margin-right: 10px; 
-   }
-   input[type="text"],
-   input[type="email"],input[type="password"] {
-     width: calc(100% - 20px);
-     padding: 7px;
-     margin-bottom: 20px;
-     border: 1px solid #ffd8d8; 
-     border-radius: 5px;
-     background-color: #fffcdd; 
-     box-sizing: border-box;
-   }
-   .checkbox-container {
-     display: flex;
-     align-items: center;
-     margin: 10px;
-   }
-   .checkbox-container input[type="checkbox"] {
-     margin-right: 10px; 
-   }
-   input[type="submit"] {
-     background-color: #ffd8d8; 
-     color: white;
-     padding: 10px 20px;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
-     width: 100%;
-   }
-   input[type="submit"]:hover {
-     background-color: #f5a2a2; 
-   }
-   .error{
-     border-color: red;
-     color: red;
-   }
-   .link{
-       color: #805841;
-       background-color: #dcf7f3;
-   }
-   .mal{
-       color:#f5a2a2;
-   }
+.cerrarMenu {
+    display: none;
+}
+
+/*seccion*/
+
+.formContenedor{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    font-family: "Exo 2", sans-serif;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background:rgba(0,0,0,0,70);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h2 {
+    color: var(--third-color);
+    font-weight: bolder; 
+    text-align: center;
+    width: 100%; 
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: var(--third-color); 
+    width: 100%;
+    margin-right: 10px; 
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #ffd8d8; 
+    border-radius: 5px;
+    background-color: #fffcdd; 
+    box-sizing: border-box;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px; 
+}
+input[type="submit"] {
+    background-color: var(--fifth-color); 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    background-color: var(--fifth-color); 
+}
+.error{
+    border-color: red;
+    color: red;
+}
+.link{
+    color: var(--secondary-color);
+    background-color: var(--third-color);
+    font-weight: bold;
+}
+
+.link a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.mal{
+    color: var(--fifth-color);
+}
 
 /*footer */
 
@@ -253,81 +280,141 @@ i {
 
 @media (max-width: 768px) {
 
-    header, nav {
-        width: 768px;
+    body {
+        background-image: none;
     }
 
-    .container, .container-fluid {
-        padding-left: 20px;
-    }
-    
-    .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:flex-start;
-        padding-left: 10px;
+    /*header y navbar*/
+    header{
+        flex-wrap: wrap;
     }
 
-    .nav-item {
-        display: none;
+    .contenedorIconos {
+        flex-wrap: wrap;
     }
 
-    .abrirMenu{
-        display: block;
-        position: relative;
-        border: none;
-        color: var(--third-color);
-        margin-top: 22px;
-        margin-left: 510px;
-        background: none; 
-        border: none;
+    .contenedorList ul {
+        flex-wrap: wrap;
     }
 
-    .contenedorB{
+    .contenedorList ul li {
+        margin-right: 10px;
+    }
+
+    .contenedorIconos ul li {
         margin-left: 10px;
     }
 
-    .modoOscuroOn{
-        margin-left: 10px;
+    /*seccion*/
+    .formContenedor{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-right: 50px;
+        background-image: url("https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-    #lista {
+    /*pie de pagina*/
+
+    .contenedorF {
+        padding: 20px;
+    }
+
+    #lista{
         margin-left: 20px;
-        margin-right: 20px; 
-    }
+    } 
     
     .iconos {
-        padding-left: 20px;
-        padding-right: 20px; 
+        padding: 10px;
     }
 
 }
 
-@media (max-width: 375px)
- and (max-height: 667px) {
+@media (max-width: 375px) {
 
-    header, nav {
-        width: 667px;
+    body{
+        padding-top: 0;
     }
 
-    .container, .container-fluid {
-        padding-top: 5px;
+    /*Barra de navegacion*/
+    header {
+        z-index: 99;
+    }
+
+    .contenedorList {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+        background-color: var(--fifth-color);
+        pointer-events: none;
+        margin-top: 0px;
+        padding-top: 20px;
+        opacity: 0;
+    }
+    
+    .contenedorList ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorList ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .navItem:hover {
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+    }
+
+    .contenedorIconos{
+        width: 100%;
+        margin-left: 30px;
     }
 
     .abrirMenu{
-        margin-left: 420px;
+        display: block;
+        background-color: var(--secondary-color);
+        color: var(--third-color);
+        border: none;
+        align-self: center;
+        margin-left: 100px;
     }
 
-    .contenedorB{
-        margin-left: 10px;
+    .cerrarMenu{
+        display: block;
+        background-color: var(--fifth-color);
+        color: var(--secondary-color);
+        border: none;
+        align-self: center;
     }
 
-    .modoOscuroOn{
-        margin-left: 10px;
+    .menuAbierto{
+        opacity: 1;
+        pointer-events: all;
     }
 
-    footer {
-        width: 667px;
+    /*seccion*/
+    .formContenedor{
+        margin-top: 130px;
+        margin-bottom: 50px;
+    }
+
+
+    /*pie de pagina*/
+    .contenedorF {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
